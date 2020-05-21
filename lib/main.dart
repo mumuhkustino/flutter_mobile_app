@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'fonts_style.dart';
+import 'custom_color.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,7 +8,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    const colorLightGray = const Color(0xF2F2F2F2);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
               "Cashy",
               style: TextStyle(color: Colors.black, fontFamily: 'Roboto'),
             ),
-            backgroundColor: colorLightGray,
+            backgroundColor: lightGray,
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.search),
